@@ -20,6 +20,7 @@ export default function App() {
             <div className="hero-actions">
               <a className="btn primary" href="#projects">See Projects</a>
               <a className="btn" href="mailto:crisostomodunn24@gmail.com">Contact</a>
+              <a className="btn" href="/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
             </div>
           </div>
           <div className="hero-art">
@@ -46,7 +47,11 @@ export default function App() {
 
       <footer className="site-footer">
         <div className="container">
-          <p>© {new Date().getFullYear()} Crisostomo Dunn</p>
+          <p>
+            © {new Date().getFullYear()} Crisostomo Dunn
+            &nbsp;•&nbsp;
+            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+          </p>
         </div>
       </footer>
     </div>
