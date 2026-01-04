@@ -18,9 +18,20 @@ export default function App() {
             <h1>Hi — I’m Crisostomo</h1>
             <p className="hero-sub">I’m a UC Berkeley junior studying Computer Science and Applied Mathematics, currently seeking a summer internship. I build practical web applications and tools, learn quickly, and enjoy hands‑on development that prepares me for a long-term career.</p>
             <div className="hero-actions">
-              <a className="btn primary" href="#projects">See Projects</a>
+              <a className="btn primary" href="/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
               <a className="btn" href="mailto:crisostomodunn24@gmail.com">Contact</a>
-              <a className="btn" href="/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+              <a className="btn" href="#projects">See Projects</a>
+            </div>
+
+            <div className="hero-meta">
+              <div className="skills" aria-hidden>
+                <span className="pill">JavaScript</span>
+                <span className="pill">React</span>
+                <span className="pill">Python</span>
+                <span className="pill">TypeScript</span>
+                <span className="pill">SQL</span>
+                <span className="pill">Docker</span>
+              </div>
             </div>
           </div>
           <div className="hero-art">
