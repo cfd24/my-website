@@ -12,6 +12,9 @@ export default function Featured() {
   return (
     <section id="featured" className="section">
       <h2>Featured Projects</h2>
+      <p className="muted" style={{ marginTop: '0.25rem' }}>
+        Note: I can’t leave Berkeley course repositories public, but I can share them privately on request.
+      </p>
       <div className="projects-grid">
         {featured.map((p) => (
           <a key={p.id} className="project-card" href={p.repo} target="_blank" rel="noopener noreferrer">
