@@ -8,32 +8,15 @@ import './App.css'
 import React from 'react'
 import Featured from './components/Featured'
 
-// Top navigation — small, self-contained component used only in this file.
-function Nav() {
-  return (
-    <nav className="top-nav">
-      <div className="nav-inner">
-        <a className="nav-brand" href="/">Crisostomo</a>
-        <div className="nav-links">
-          <a href="/#about">About</a>
-          <a href="#projects">Projects</a>
-        </div>
-      </div>
-    </nav>
-  )
-}
-
 // Default export: application shell. Keep this file purely presentational.
 export default function App() {
   return (
     <div className="app-shell">
-      <Nav />
-
       <header className="hero-large">
         <div className="hero-inner">
           <div className="hero-copy">
             <h1>Hi — I’m Crisostomo</h1>
-            <p className="hero-sub">Engineer & developer. I build focused, usable web apps and tools.</p>
+            <p className="hero-sub">UC Berkeley junior in Computer Science & Applied Math, actively seeking a summer internship. I build practical web apps and tools and am eager to learn on the job.</p>
             <div className="hero-actions">
               <a className="btn primary" href="#projects">See Projects</a>
               <a className="btn" href="mailto:crisostomodunn24@gmail.com">Contact</a>
@@ -49,7 +32,7 @@ export default function App() {
         <section id="about" className="section about">
           <div className="container">
             <h2>About</h2>
-            <p>I focus on frontend engineering, automation, and building clear user experiences. I enjoy open-source and mentoring others.</p>
+            <p>I'm a junior at UC Berkeley studying Computer Science and Applied Mathematics, and I'm actively looking for a summer internship (my main priority). I don't have extensive industry experience yet, but I'm curious and open to a wide range of opportunities — I want to work on interesting, hands-on projects that help me grow and prepare for a long-term career.</p>
           </div>
         </section>
 

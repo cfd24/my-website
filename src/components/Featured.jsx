@@ -30,7 +30,13 @@ export default function Featured() {
           </a>
         ))}
       </div>
-      <p style={{marginTop: '0.75rem'}}><a className="cta" href="/more-info.html#projects">See all projects & mirrors</a></p>
+      <p style={{marginTop: '0.75rem'}}>
+        <a className="cta" href="https://github.com/cfd24org" target="_blank" rel="noopener noreferrer">GitHub</a>
+        &nbsp;•&nbsp;
+        <a className="cta" href="https://www.linkedin.com/in/crisostomo-dunn/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        &nbsp;•&nbsp;
+        <a className="cta" href="mailto:crisostomodunn24@gmail.com">Email</a>
+      </p>
     </section>
   )
 }
