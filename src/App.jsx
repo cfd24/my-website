@@ -16,7 +16,7 @@ export default function App() {
         <div className="hero-inner">
           <div className="hero-copy">
             <h1>Hi — I’m Crisostomo</h1>
-            <p className="hero-sub">UC Berkeley junior in Computer Science & Applied Math, actively seeking a summer internship. I build practical web apps and tools and am eager to learn on the job.</p>
+            <p className="hero-sub">UC Berkeley junior in Computer Science & Applied Mathematics — actively seeking a summer internship. I build practical web apps and tools, learn quickly, and enjoy hands-on development that prepares me for a long-term career.</p>
             <div className="hero-actions">
               <a className="btn primary" href="#projects">See Projects</a>
               <a className="btn" href="mailto:crisostomodunn24@gmail.com">Contact</a>
@@ -30,13 +30,6 @@ export default function App() {
       </header>
 
       <main>
-        <section id="about" className="section about">
-          <div className="container">
-            <h2>About</h2>
-            <p>I'm a junior at UC Berkeley studying Computer Science and Applied Mathematics, and I'm actively looking for a summer internship (my main priority). I don't have extensive industry experience yet, but I'm curious and open to a wide range of opportunities — I want to work on interesting, hands-on projects that help me grow and prepare for a long-term career.</p>
-          </div>
-        </section>
-
         <section id="projects" className="section projects">
           <div className="container">
             <h2>Projects</h2>
