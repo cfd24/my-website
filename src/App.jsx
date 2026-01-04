@@ -16,7 +16,7 @@ export default function App() {
         <div className="hero-inner">
           <div className="hero-copy">
             <h1>Hi — I’m Crisostomo</h1>
-            <p className="hero-sub">UC Berkeley junior in Computer Science & Applied Mathematics — actively seeking a summer internship. I build practical web apps and tools, learn quickly, and enjoy hands-on development that prepares me for a long-term career.</p>
+            <p className="hero-sub">I’m a UC Berkeley junior studying Computer Science and Applied Mathematics, currently seeking a summer internship. I build practical web applications and tools, learn quickly, and enjoy hands‑on development that prepares me for a long-term career.</p>
             <div className="hero-actions">
               <a className="btn primary" href="#projects">See Projects</a>
               <a className="btn" href="mailto:crisostomodunn24@gmail.com">Contact</a>
