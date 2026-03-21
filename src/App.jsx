@@ -6,7 +6,7 @@
 
 import './App.css'
 import React from 'react'
-import Featured from './components/Featured'
+import Featured from './components/Featured' 
 
 // Default export: application shell. Keep this file purely presentational.
 export default function App() {
