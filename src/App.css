@@ -382,7 +382,8 @@
 .btn { display:inline-block; padding:0.58rem 0.95rem; border-radius:10px; text-decoration:none; font-weight:700; transition: transform 0.12s ease, box-shadow 0.12s ease; }
 .btn:hover { transform: translateY(-3px); box-shadow: 0 10px 30px rgba(2,6,23,0.08); }
 .btn.primary { background: linear-gradient(90deg,var(--accent),var(--accent2)); color:#fff; border: none; }
-.btn:not(.primary) { background: transparent; border:1px solid rgba(15,23,42,0.06); color: #0f172a; }
+.btn.highlight { background: linear-gradient(90deg, #10b981, #34d399); color:#fff; border: none; }
+.btn:not(.primary):not(.highlight) { background: transparent; border:1px solid rgba(15,23,42,0.06); color: #0f172a; }
 
 /* Profile art with subtle mask and outline */
 .hero-art img { width:320px; border-radius:16px; box-shadow: 0 12px 40px rgba(2,6,23,0.08); border: 1px solid rgba(15,23,42,0.04); }

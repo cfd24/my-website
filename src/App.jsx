@@ -5,8 +5,7 @@
 //   `src/components/*`. Styling is primarily in `src/App.css`.
 
 import './App.css'
-import React from 'react'
-import Featured from './components/Featured' 
+import Featured from './components/Featured'
 
 // Default export: application shell. Keep this file purely presentational.
 export default function App() {
@@ -19,6 +18,7 @@ export default function App() {
             <p className="hero-sub">I’m a UC Berkeley junior studying Computer Science and Applied Mathematics, currently seeking a summer internship. I build practical web applications and tools, learn quickly, and enjoy hands‑on development that prepares me for a long-term career.</p>
             <div className="hero-actions">
               <a className="btn primary" href="#projects">See Projects</a>
+              <a className="btn highlight" href="/drinks/index.html">Play Games 🍻</a>
               <a className="btn" href="mailto:crisostomodunn24@gmail.com">Contact</a>
               <a className="btn" href="/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
             </div>

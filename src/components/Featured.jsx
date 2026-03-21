@@ -3,7 +3,6 @@
 // - Purpose: display a small curated list of projects from `src/data/projects.json`.
 // - Notes: kept intentionally minimal and presentational. Open external links in a new tab.
 
-import React from 'react'
 import projects from '../data/projects.json'
 
 export default function Featured() {
@@ -17,7 +16,7 @@ export default function Featured() {
       </p>
       <div className="projects-grid">
         {featured.map((p) => (
-          <a key={p.id} className="project-card" href={p.repo} target="_blank" rel="noopener noreferrer">
+          <a key={p.id} className="project-card" href={p.url || p.repo} target="_blank" rel="noopener noreferrer">
             <div className="project-thumb">
               <img src={p.image} alt={p.title} />
             </div>
@@ -33,7 +32,7 @@ export default function Featured() {
           </a>
         ))}
       </div>
-      <p style={{marginTop: '0.75rem'}}>
+      <p style={{ marginTop: '0.75rem' }}>
         <a className="cta" href="https://github.com/cfd24org" target="_blank" rel="noopener noreferrer">GitHub</a>
         &nbsp;•&nbsp;
         <a className="cta" href="https://www.linkedin.com/in/crisostomo-dunn/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
