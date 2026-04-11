@@ -19,6 +19,7 @@ export default function App() {
             <div className="hero-actions">
               <a className="btn primary" href="#projects">See Projects</a>
               <a className="btn highlight" href="/drinks/">Play Games 🍻</a>
+              <a className="btn" href="/yt-scraper/" target="_blank" rel="noopener noreferrer">Creator DB 📺</a>
               <a className="btn" href="mailto:crisostomodunn24@gmail.com">Contact</a>
               <a className="btn" href="/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
             </div>
