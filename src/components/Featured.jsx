@@ -1,44 +1,66 @@
 // src/components/Featured.jsx
-// Featured projects UI
-// - Purpose: display a small curated list of projects from `src/data/projects.json`.
-// - Notes: kept intentionally minimal and presentational. Open external links in a new tab.
+// Categorized project showcase UI
 
 import projects from '../data/projects.json'
+import ProjectCard from './ProjectCard'
 
 export default function Featured() {
-  const featured = projects.filter((p) => p.featured)
-  if (!featured.length) return null
+  // Categorize projects based on presence of live URL or featured flag
+  const liveApps = projects.filter((p) => p.url && p.id !== "data-placeholder")
+  const githubLibrary = projects.filter((p) => !p.url && p.repo)
+
   return (
-    <section id="featured" className="section">
-      <h2>Featured Projects</h2>
-      <p className="muted" style={{ marginTop: '0.25rem' }}>
-        Note: I can’t leave Berkeley course repositories public, but I can share them privately on request.
-      </p>
-      <div className="projects-grid">
-        {featured.map((p) => (
-          <a key={p.id} className="project-card" href={p.url || p.repo} target="_blank" rel="noopener noreferrer">
-            <div className="project-thumb">
-              <img src={p.image} alt={p.title} />
-            </div>
-            <div className="project-body">
+    <div className="showcase-shell">
+      {/* 🚀 Interactive Showcase Section */}
+      <section className="section">
+        <div className="section-header animate-in">
+          <h2>Interactive Showcase</h2>
+          <p>Production-ready applications and interactive tools.</p>
+        </div>
+        <div className="projects-grid">
+          {liveApps.map((p, index) => (
+            <ProjectCard key={p.id} project={p} />
+          ))}
+        </div>
+      </section>
+
+      {/* 📚 Engineering Library Section */}
+      <section className="section">
+        <div className="section-header animate-in">
+          <h2>Engineering Library</h2>
+          <p>Coursework, low-level systems, and data research from UC Berkeley.</p>
+        </div>
+        <div className="library-grid">
+          {githubLibrary.map((p) => (
+            <a 
+              key={p.id} 
+              href={p.repo} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="library-card animate-in"
+            >
               <h3>{p.title}</h3>
-              <p>{p.desc}</p>
-              <div className="tags">
-                {p.tags.map((t) => (
+              <p>{p.shortDesc || p.desc}</p>
+              <div className="project-tags">
+                {p.tags.slice(0, 3).map((t) => (
                   <span key={t} className="tag">{t}</span>
                 ))}
               </div>
-            </div>
-          </a>
-        ))}
-      </div>
-      <p style={{ marginTop: '0.75rem' }}>
-        <a className="cta" href="https://github.com/cfd24org" target="_blank" rel="noopener noreferrer">GitHub</a>
-        &nbsp;•&nbsp;
-        <a className="cta" href="https://www.linkedin.com/in/crisostomo-dunn/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        &nbsp;•&nbsp;
-        <a className="cta" href="mailto:crisostomodunn24@gmail.com">Email</a>
-      </p>
-    </section>
+            </a>
+          ))}
+        </div>
+      </section>
+
+      {/* 🔗 External Links */}
+      <section className="section mini-links animate-in delay-2">
+        <div className="container">
+          <p>
+            <a className="btn outline" href="https://github.com/cfd24org" target="_blank" rel="noopener noreferrer">Full GitHub Archive</a>
+            &nbsp;
+            <a className="btn outline" href="https://www.linkedin.com/in/crisostomo-dunn/" target="_blank" rel="noopener noreferrer">LinkedIn Connect</a>
+          </p>
+        </div>
+      </section>
+    </div>
   )
 }
