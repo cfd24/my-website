@@ -176,6 +176,23 @@
     "category": "personal"
   },
   {
+    "id": "fantasy-draft",
+    "title": "Historical Draft Sim",
+    "repo": "https://github.com/cfd24/fantasy-draft-sim",
+    "url": "/draft/index.html",
+    "desc": "A full-stack fantasy baseball draft backtesting platform. Compare draft strategies against LLM-powered AI GMs using point-in-time historical data from 2018-2024.",
+    "shortDesc": "Full-stack fantasy baseball draft backtesting with AI GMs.",
+    "image": "/favicon.svg",
+    "tags": [
+      "python",
+      "fastapi",
+      "react",
+      "ai"
+    ],
+    "category": "personal",
+    "featured": true
+  },
+  {
     "id": "drinking-games",
     "title": "Party Games (PWA)",
     "repo": "https://github.com/cfd24/DrinkingGameMobile",
